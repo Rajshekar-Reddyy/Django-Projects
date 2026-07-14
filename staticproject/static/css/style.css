@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(139, 139, 166);
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+
+}

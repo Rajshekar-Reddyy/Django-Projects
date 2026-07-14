@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <center>
+
+        
+        <h1>{{ name }} favorite</h1>
+        
+        <div>
+            <h2>Fav Animal: {{ animal }}</h2>
+            <a href="https://animal.com">Click Here</a>
+            <img src="{% static 'image/download.jpeg' %}" alt="animal">
+        </div>
+        
+        <div>
+            <h2>Fav Bird: {{ bird }}</h2>
+            <a href="https://bird.com">Click Here</a>
+            <img src="{% static 'image/images.webp' %}" alt="bird">
+        </div>
+    </center>
+
+</body>
+</html>
