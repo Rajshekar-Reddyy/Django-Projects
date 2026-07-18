@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: gold;
+        }
+        table{
+            border-radius: 10px;
+            border-color: gold;
+            font-size: 20px;
+            /* text-decoration: underline; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            gap: 10px;
+            padding: 10px;
+            color: rgb(246, 155, 36);
+            background-color: black;
+        
+        }
+        h1{
+            text-decoration: underline;
+        }
+        td{
+            padding: 10px;
+            text-transform: uppercase+;
+
+        }
+        th{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>STUDENT DATABASE</h1>
+        <table border="2px">
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>age</th>
+                <th>email</th>
+                <th>dob</th>
+                <th>place</th>
+                <th>branch</th>
+                <th>mobile</th>
+                <th>marks</th>
+                
+            </tr>
+            {% for i in stud %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.age}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.dob}}</td>
+                <td>{{i.place}}</td>
+                <td>{{i.branch}}</td>
+                <td>{{i.mobile}}</td>
+                <td>{{i.marks}}</td>
+                
+                
+            </tr>
+            {%endfor%}
+
+        </table>
+    </center>
+    
+</body>
+</html>
