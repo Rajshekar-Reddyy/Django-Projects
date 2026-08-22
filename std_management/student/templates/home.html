@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for student in students %}
+
+<!-- <p>Age:{{student.age}}</p>
+<p>Course:{{student.course}}</p>
+<p>Branch:{{student.branch}}</p>
+<p>Collage:{{student.college}}</p>
+<hr> -->
+
+
+<p>name: <a href="{% url 'blog' student.roll_no %}">{{student.name}}</a> </p>
+{% endfor %}
+{% endblock content %}

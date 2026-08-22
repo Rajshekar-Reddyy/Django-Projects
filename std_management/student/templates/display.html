@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if message %}
+<p style="color: red;">{{message}}</p>
+{% else %}
+<div class="card">
+
+    <p>name:{{student.name}}</p>
+    <p>Age:{{student.age}}</p>
+    <p>Course:{{student.course}}</p>
+    <p>Branch:{{student.branch}}</p>
+    <p>Collage:{{student.college}}</p>
+</div>
+{% endif %}
+<hr>
+{% endblock content %}
